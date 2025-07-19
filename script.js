@@ -7,7 +7,7 @@ let arr = [
 ];
 
 function PrintDeveloperbyMap() {
-  arr.filter(employee =>employee.profession === "develper")
+  arr.filter(employee =>employee.profession === "developer")
   .map( employee => console.log("Developers :",employee))
 }
 
@@ -16,8 +16,8 @@ function PrintDeveloperbyForEach() {
 }
 
 function addData() {
- const newEmployeeArray =  {id:4,name:"susan",age:"20",profession:"intern"} 
- const isExist = arr.some( employee => employee.id === newEmployeeArray.id)
+ const newEmployee =  {id:4,name:"susan",age:"20",profession:"intern"} 
+ const isExist = arr.some( employee => employee.id === newEmployee.id)
  if(isExist){
   console.log("Already Existed")
   return;
